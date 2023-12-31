@@ -275,7 +275,13 @@ export function App() {
               />
             </svg>
           </div>
-          <video src={"/RJS.webm"} className={"h-full w-full"} loop muted />
+          <video
+            autoPlay
+            src={"/RJS.webm"}
+            className={"h-full w-full"}
+            loop
+            muted
+          />
         </div>
         <section className={"w-full mt-[14vw]  "}>
           <Footer />
