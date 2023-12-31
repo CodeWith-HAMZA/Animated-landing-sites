@@ -1,5 +1,5 @@
 import { Ref, forwardRef, useLayoutEffect, useRef } from "react";
-import "./app.css";
+import "./App.css";
 import gsap from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
