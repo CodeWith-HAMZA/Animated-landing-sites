@@ -5,14 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
-  </head>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->  </head>
   <body>
-    <main className="w-full">
-      <div id="home" className="min-h-screen w-full border-2 border-red-500">
-        <nav className="w-full py-[3.2vw] px-[4vw] flex justify-between ">
-          <span className="font-bold text-[2.2vw] ">Cuberto</span>
-          <div className="flex gap-[4.7vw] text-[1.5vw] items-center">
-            <span>Home</span>
+    <main class ="w-full">
+      <div id="home" class ="min-h-screen w-full">
+        <nav class ="w-full py-[3.2vw] px-[4vw] flex justify-between ">
+          <span class ="font-bold text-[2.2vw] ">Cuberto</span>
+          <div class ="flex gap-[4.7vw] text-[1.5vw] items-center">
+            <span class="magnet-target">Home</span>
             <span>Explore</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -20,22 +21,45 @@
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-[2.7vw]"
-            >
+              class ="size-[2.7vw] menu-button magnet-target"
+              >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M3.75 9h16.5m-16.5 6.75h16.5"
-              />
-            </svg>
-
-          </div>
+                />
+              </svg>
+              
+            </div>
         </nav>
-        <div id="homeMai">
-          
-        </div>
+        <section id="homeMain" class="py-[21vw] w-full px-[12vw] h-[80vh] leading-tight">
+
+          <h5 class="text-[1.5vw]">We make it happen.</h5>
+          <div class="main-heading flex gap-[3.2vw] text-[6.38vw] font-bold scale-y-125 ">
+            <span class="mask-target">Websites</span>
+              <span class="mask-target">Apps</span>
+              <span class="mask-target">Brandings</span>
+            </div>
+          </section>
+          <section class="home-last-paragraph h-screen px-[12vw]">
+            <p class="text-[2vw] leading-[2.4vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit, <br>  eius cumque aliquam  necessitatibus enim <br> officials  provident are the cupiditate at,  officiis possimus. Minima?</p>
+          </section>
       </div>
     </main>
-    <script type="module" src="/src/main.ts"></script>
+    <!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->    <script type="module" src="/src/main.ts"></script>
+    <!--  Gsap is needed for Basic Effects -->
+     
   </body>
-</html>
+  </html>
+  
